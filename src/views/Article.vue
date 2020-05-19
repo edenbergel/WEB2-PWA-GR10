@@ -1,8 +1,10 @@
 <template>
-  <div v-if='post'>
+  <div>
     <h1>{{ post.title }}</h1>
+    <h1>test</h1>
     <p>{{ post.body }}</p>
   </div>
+  
 </template>
 
 <script>
