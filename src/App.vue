@@ -4,7 +4,7 @@
       <img alt="Vue logo" src="../src/assets/logo.svg">   
 
       <div class="nav_link">
-        <router-link to="/">Home</router-link> |
+        <router-link to="/">Home</router-link>
         <router-link to="/listing">Articles</router-link>
       </div>
     </div>
@@ -12,13 +12,15 @@
   </div>
 </template>
 
-<style>
+<style lang="scss">
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,900&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
 }
 
 #nav {
@@ -28,10 +30,15 @@
 
 #nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: #000;
+  text-decoration: none;
+
+  +a {
+    margin-left: 1rem;
+  }
 }
 
 #nav a.router-link-exact-active {
-  color: #42b983;
+  color: #DC904D;
 }
 </style>
