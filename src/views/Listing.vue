@@ -1,13 +1,7 @@
 <template>
   <div class="about">
-    <h1>This is an listing page</h1>
-    <div class="content">
-      <div class="card" v-for="post in posts" :key="post.id">
-        <router-link :to="`/article/${ post.id }`">
-          {{ post.title }}
-        </router-link>
-      </div>
-    </div>
+   
+  
   </div>
 </template>
 
