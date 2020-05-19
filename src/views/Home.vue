@@ -1,12 +1,12 @@
 <template>
 	<div class="home">
-		<HelloWorld msg="Welcome to Your Vue.js App"/>
-		<HelloWorld @updateMessage="title = $event" :msg="title"/>
+		<Classement msg="Welcome to Your Vue.js App"/>
+		<Classement @updateMessage="title = $event" :msg="title"/>
 	</div>
 </template>
 
 <script>
-import HelloWorld from '@/components/HelloWorld.vue'
+import Classement from '@/components/Classement.vue'
 
 export default {
 	name: 'Home',
@@ -16,7 +16,7 @@ export default {
 		}
 	},
 	components: {
-		HelloWorld,
+		Classement,
 	}
 }
 </script>

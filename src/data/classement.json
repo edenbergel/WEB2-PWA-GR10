@@ -1,0 +1,23 @@
+[
+  {
+    "playerId": 1,
+    "player": "Lebron James",
+    "points": "34",
+    "rebonds": "9",
+    "assists": "8"
+  },
+  {
+    "playerId": 2,
+    "player": "Stephen Curry",
+    "points": "20",
+    "rebonds": "6",
+    "assists": "4"
+  },
+  {
+    "playerId": 3,
+    "player": "Gianis Antetokumpo",
+    "points": "10",
+    "rebonds": "2",
+    "assists": "3"
+  }
+]
