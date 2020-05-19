@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="article">
+    <div v-if="post" class="article">
       <div class="article--img">
         <img :src="`https://picsum.photos/1024/480/?image=${idUrl} `" alt="image" />
       </div>
@@ -26,7 +26,7 @@ export default {
       idUrl: parseInt(this.$route.params.slug) + 15 - 1 
     };
   },
-  created() {
+  beforeCreate() {
     fetch(
       `https://jsonplaceholder.typicode.com/posts/${this.$route.params.slug}`
     ).then(response => {
