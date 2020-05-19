@@ -2,7 +2,7 @@
   <div>
     <div class="article">
       <div class="article--img">
-        <img src="https://picsum.photos/1024/480/?image=10" alt="image" />
+        <img :src="`https://picsum.photos/1024/480/?image=${this.$route.params.slug + 15} `" alt="image" />
       </div>
       <div class="article--content">
         <h1>{{post.title}}</h1>
