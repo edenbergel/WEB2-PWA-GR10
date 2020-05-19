@@ -1,6 +1,13 @@
 #nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+
+  img {
+    @media screen and (min-width: 768px) {
+      width: 15rem;
+    }
+  }
 
   a {
     font-weight: bold;
@@ -8,6 +15,10 @@
     text-decoration: none;
     font-style: italic;
   
+    @media screen and (min-width: 768px) {
+      font-size: 1.2rem;
+    }
+
     +a {
       margin-left: 1rem;
     }

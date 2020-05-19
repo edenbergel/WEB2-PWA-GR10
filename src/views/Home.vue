@@ -1,7 +1,7 @@
 <template>
 	<div class="home">
-		<Classement msg="Welcome to Your Vue.js App"/>
-		<Classement @updateMessage="title = $event" :msg="title"/>
+		<Classement />
+	<!-- 	<Classement @updateMessage="title = $event" :msg="title"/> -->
 	</div>
 </template>
 
