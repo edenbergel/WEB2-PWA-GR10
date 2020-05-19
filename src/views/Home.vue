@@ -1,5 +1,6 @@
 <template>
 	<div class="home">
+		<h3>Le Classement de la Semaine</h3>
 		<Classement />
 	<!-- 	<Classement @updateMessage="title = $event" :msg="title"/> -->
 	</div>
@@ -20,3 +21,7 @@ export default {
 	}
 }
 </script>
+
+<style lang="scss" scoped>
+	@import "../scss/home.scss";
+</style>
