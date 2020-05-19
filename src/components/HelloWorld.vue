@@ -19,12 +19,12 @@ export default {
 			isShow: false
 		}
 	},
-	created() {
-		console.log('création')
-	},
-	mounted() {
-		console.log('ajouté au DOM')
-	},
+	// created() {
+	// 	console.log('création')
+	// },
+	// mounted() {
+	// 	console.log('ajouté au DOM')
+	// },
 	computed: {
 		bigMessage() {
 			return this.msg + '!!!!'
