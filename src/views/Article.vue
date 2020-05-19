@@ -1,25 +1,38 @@
 <template>
   <div>
-    <h1>{{ post.title }}</h1>
-    <h1>test</h1>
-    <p>{{ post.body }}</p>
-  </div>
-  
-</template>
+    <div class="article">
+      <div class="article--img">
+        <img src="https://picsum.photos/1024/480/?image=10" alt="image" />
+      </div>
+      <div class="article--content">
+        <h1>{{post.title}}</h1>
 
+        {{post.body}}
+        <div class="buttons">
+            <router-link class="retour"  :to="`/listing/`">Retour</router-link>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+<style lang="scss" scoped>
+@import url("../scss/article.scss");
+</style>
 <script>
 export default {
-  data () {
+  data() {
     return {
       post: null
-    }
+    };
   },
-  created () {
-    fetch(`https://jsonplaceholder.typicode.com/posts/${this.$route.params.slug}`).then((response) => {
-      response.json().then((data) => {
-        this.post = data
-      })
-    })
+  created() {
+    fetch(
+      `https://jsonplaceholder.typicode.com/posts/${this.$route.params.slug}`
+    ).then(response => {
+      response.json().then(data => {
+        this.post = data;
+      });
+    });
   }
-}
+};
 </script>
