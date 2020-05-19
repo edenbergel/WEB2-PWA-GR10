@@ -1,7 +1,8 @@
 <template>
 	<div class="home">
-		<Classement msg="Welcome to Your Vue.js App"/>
-		<Classement @updateMessage="title = $event" :msg="title"/>
+		<h3>Le Classement de la Semaine</h3>
+		<Classement />
+	<!-- 	<Classement @updateMessage="title = $event" :msg="title"/> -->
 	</div>
 </template>
 
@@ -20,3 +21,7 @@ export default {
 	}
 }
 </script>
+
+<style lang="scss" scoped>
+	@import "../scss/home.scss";
+</style>

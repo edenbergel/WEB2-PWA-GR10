@@ -7,12 +7,21 @@
 		<h1 @click="$emit('updateMessage', 'un autre message')">{{ isShow }}</h1> -->
 		<div class="classement_bloc" v-for="classement in classements" :key="classement.id">
 			<div class="bloc_left">
-				{{ classement.player }}
+				<h1>{{ classement.player }}</h1>
 			</div>
 			<div class="bloc_right">
-				{{ classement.points }}
-				{{ classement.rebonds }}
-				{{ classement.assists }}
+				<div>
+					<h1>{{ classement.points }}</h1> 
+					<span>points</span>
+				</div>
+				<div>
+					<h1>{{ classement.rebonds }}</h1> 
+					<span>rebonds</span>
+				</div>
+				<div>
+					<h1>{{ classement.assists }}</h1> 
+					<span>assists</span>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -55,19 +64,6 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
+<style lang="scss" scoped>
+	@import "../scss/home.scss";
 </style>
