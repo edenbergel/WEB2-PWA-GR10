@@ -25,6 +25,5 @@ body {
 
 #app {
   text-align: center;
-  padding: 2rem;
 }
 </style>
