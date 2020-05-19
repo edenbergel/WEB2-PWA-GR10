@@ -11,6 +11,7 @@
         style="text-shadow: 0px 0px 2px #000"
         fade
         indicators
+        controls
         img-width="1024"
         img-height="480"
       >
