@@ -18,7 +18,7 @@ const routes = [
     component: Listing
   },
   {
-    path: '/article/',
+    path: '/article/:slug',
     name: 'Article',
     component: Article
   }
