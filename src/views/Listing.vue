@@ -2,7 +2,6 @@
   <div class="carousel-vue">
     <div class="title">
       <h2>Nos derniers articles</h2>
-      <h2>Nos derniers articles</h2>
     </div>
 
     <div class="auto">

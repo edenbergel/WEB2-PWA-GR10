@@ -19,24 +19,18 @@
   justify-content: space-around;
   flex-wrap: nowrap;
 }
-@keyframes moove {
-  from {
-    transform: translateX(100vw);
-  }
 
-  to {
-    transform: translateX(-100vw);
-  }
-}
 h2 {
   font-family: Roboto;
   font-weight: 900;
-  font-size: 1.25rem !important;
-  line-height: 23px;
+  font-size: 1.75rem !important;
+  text-transform: capitalize;
+  font-style: italic;
   color: #000000 !important;
-  text-align: left;
+  text-align: center;
   animation: moove 5s infinite linear;
   width: 100vw;
+  line-height: 3.2 !important;
 }
 
 h2:after {
@@ -46,7 +40,7 @@ h2:after {
   background: #dc904d;
   position: absolute;
   margin-left: 10px;
-  margin-top: 7px;
+  margin-top: 43px;
   border-radius: 10px;
 }
 #carousel-fade {
@@ -93,4 +87,8 @@ h2:after {
 .carousel-vue a:hover {
   color: white !important;
   text-decoration: none !important;
+}
+
+h3 {
+  text-transform: uppercase;
 }
