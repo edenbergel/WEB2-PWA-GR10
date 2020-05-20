@@ -18,7 +18,7 @@
         <router-link v-for="(post, index) in posts" :to="`/article/${ post.id }`" :key="post.id">
           <b-carousel-slide
             :caption="post.title"
-            :img-src="`https://picsum.photos/1024/480/?image=${index + 15} `"
+            :img-src="`https://teddyboirin.com/vuejs/${index +1 }/${index + 1 }`"
             
           >
             <router-link class="read"  :to="`/article/${ post.id }`">Lire l'article</router-link>

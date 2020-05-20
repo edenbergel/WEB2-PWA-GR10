@@ -2,7 +2,7 @@
   <div>
     <div v-if="post" class="article">
       <div class="article--img">
-        <img :src="`https://picsum.photos/1024/480/?image=${idUrl} `" alt="image" />
+        <img :src="`https://teddyboirin.com/vuejs/${this.$route.params.slug}/${this.$route.params.slug}.jpg`" alt="image" />
       </div>
       <div class="article--content">
         <h1>{{post.title}}</h1>
@@ -23,7 +23,6 @@ export default {
   data() {
     return {
       post: null,
-      idUrl: parseInt(this.$route.params.slug) + 15 - 1 
     };
   },
   beforeCreate() {
